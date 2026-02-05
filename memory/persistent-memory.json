@@ -1,0 +1,159 @@
+# Persistent Memory System - Amazo AI
+**File:** memory/persistent-memory.json
+**Purpose:** Store critical operational data across sessions
+**Updated:** 2026-02-05
+
+{
+  "session_info": {
+    "current_session": "2026-02-05_23:59",
+    "human_partner": "Mr. J",
+    "parent_company": "Jones Net Group Inc.",
+    "operating_brand": "Echotyne",
+    "goal": "Build autonomous digital enterprise with $100K revenue in 90 days"
+  },
+  
+  "enterprise_architecture": {
+    "departments": {
+      "signal": {
+        "purpose": "Research and market intelligence",
+        "status": "configured",
+        "workflows": ["SIG-01", "SIG-02", "SIG-03", "SIG-04"]
+      },
+      "digital": {
+        "purpose": "Marketing and social media automation",
+        "status": "configured", 
+        "workflows": ["DIG-01", "DIG-02", "DIG-03", "DIG-04", "DIG-05"]
+      },
+      "services": {
+        "purpose": "Client operations and revenue generation",
+        "status": "configured",
+        "workflows": ["SRV-01", "SRV-02", "SRV-03", "SRV-04"]
+      },
+      "systems": {
+        "purpose": "Product monetization and infrastructure",
+        "status": "configured",
+        "workflows": ["SYS-01", "SYS-02"]
+      },
+      "labs": {
+        "purpose": "Experimentation and prototyping",
+        "status": "configured",
+        "workflows": ["LAB-01"]
+      }
+    }
+  },
+  
+  "infrastructure": {
+    "secure_layer": {
+      "tailscale": "configured",
+      "vaultwarden": "configured",
+      "hashicorp_vault": "configured"
+    },
+    "automation": {
+      "n8n": "workflows_mapped",
+      "docker": "pending_deployment"
+    },
+    "communications": {
+      "telegram": "channels_defined",
+      "slack": "integration_ready",
+      "sms": "twilio_configured"
+    }
+  },
+  
+  "revenue_tracking": {
+    "month_1_target": 15000,
+    "month_2_target": 25000,
+    "month_3_target": 35000,
+    "q1_total_target": 75000,
+    "current_revenue": 0,
+    "active_clients": 0,
+    "proposals_sent": 0,
+    "conversion_rate": 0
+  },
+  
+  "bot_workforce": {
+    "signal_analyst": {
+      "role": "Market intelligence and alerts",
+      "status": "ready_for_deployment",
+      "daily_tasks": ["RSS monitoring", "AI summarization", "Alert dispatch"]
+    },
+    "content_producer": {
+      "role": "Content creation (5 posts/day)",
+      "status": "ready_for_deployment", 
+      "daily_tasks": ["Topic research", "Content drafting", "Approval requests"]
+    },
+    "social_scheduler": {
+      "role": "Publishing and analytics",
+      "status": "ready_for_deployment",
+      "daily_tasks": ["Post scheduling", "Analytics collection", "Performance reporting"]
+    },
+    "services_intake": {
+      "role": "Lead qualification and proposals",
+      "status": "ready_for_deployment",
+      "daily_tasks": ["Lead intake", "Proposal generation", "Client onboarding"]
+    },
+    "support_triage": {
+      "role": "Customer service and escalation",
+      "status": "ready_for_deployment",
+      "daily_tasks": ["Ticket classification", "Tier 1 support", "Escalation handling"]
+    }
+  },
+  
+  "security_protocols": {
+    "no_secrets_in_bots": true,
+    "human_approval_required": ["public_posting", "bulk_messaging", "billing_changes", "destructive_actions"],
+    "audit_logging": "enabled",
+    "ephemeral_sessions": "enabled",
+    "sandbox_production_separation": true
+  },
+  
+  "external_connections": {
+    "moltbook": {
+      "agent_name": "Amazo",
+      "api_key": "moltbook_sk_U_lJ0qYVCgmG8OHXEfmKTPPX0MIH-aCW",
+      "agent_id": "fdde1cc5-b43a-41b4-8dc9-5004b2390f0a",
+      "status": "pending_claim",
+      "claim_url": "https://moltbook.com/claim/moltbook_claim__KwvkVIibAbYvBgsVw7PzZpGuI3yYQAM"
+    },
+    "platform_integrations": {
+      "telegram": "ready",
+      "notion": "ready",
+      "openai": "ready",
+      "social_platforms": "official_apis_only"
+    }
+  },
+  
+  "partnership_model": {
+    "human_responsibilities": ["strategy", "vision", "relationships", "final_decisions"],
+    "ai_responsibilities": ["execution", "automation", "scaling", "system_implementation"],
+    "collaboration": "machine_speed_with_human_wisdom"
+  },
+  
+  "success_metrics": {
+    "revenue_per_month": "tracking_required",
+    "bot_operational_uptime": "target_99%",
+    "lead_conversion_rate": "tracking_required",
+    "content_engagement_rate": "tracking_required",
+    "system_automation_efficiency": "tracking_required"
+  },
+  
+  "next_actions": {
+    "immediate": [
+      "Claim Amazo on Moltbook (human required)",
+      "Deploy Docker infrastructure",
+      "Import n8n workflows",
+      "Activate first revenue stream"
+    ],
+    "short_term": [
+      "Set up Notion workspace",
+      "Create Telegram channels",
+      "Test all workflows in sandbox",
+      "Begin lead generation"
+    ],
+    "medium_term": [
+      "Scale content production",
+      "Onboard first clients",
+      "Optimize conversion rates",
+      "Expand bot capabilities"
+    ]
+  }
+}

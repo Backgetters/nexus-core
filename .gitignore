@@ -1,0 +1,50 @@
+# Sensitive Data
+*.key
+*.pem
+*.env
+.env.local
+config.json
+credentials.json
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Local Development
+.local/
+temp/
+tmp/
+
+# Security
+vault-data/
+secrets/
+tokens/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Runtime
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Build Outputs
+dist/
+build/
+*.egg-info/
