@@ -1,0 +1,14 @@
+#!/bin/bash
+# Jones Net Group Mega-Agent Launcher
+# Unified entry point for all capabilities
+
+cd ~/clawd
+
+# Check if Python dependencies are installed
+python3 -c "import numpy" 2>/dev/null || {
+    echo "Installing dependencies..."
+    pip3 install numpy networkx --break-system-packages 2>/dev/null || pip3 install numpy networkx --user
+}
+
+# Run mega-agent
+python3 mega_agent/mega_agent.py "$@"
