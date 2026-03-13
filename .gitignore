@@ -60,3 +60,6 @@ tools/graphthulhu/
 
 # NEXUS (separate repo)
 NEXUS/
+
+# Trading repos (cloned for reference)
+swarm-trader/
