@@ -1,0 +1,17 @@
+{
+  "job": {
+    "title": "Senior Software Engineer",
+    "company": "Stellar AI",
+    "source": "RemoteOK",
+    "type": "remote"
+  },
+  "cover_letter": "Dear Hiring Manager,\n\nI am excited to apply for the Senior Software Engineer position at Stellar AI. As a self-taught developer with hands-on experience building automation systems and working with AI tools, I bring a unique combination of technical skills and practical problem-solving ability.\n\n**Technical Skills:**\n\u2022 Python (automation, web scraping, data processing)\n\u2022 JavaScript and web development\n\u2022 API integration and automation\n\u2022 Git version control\n\u2022 SQL databases\n\u2022 AI/ML tools (ChatGPT, Claude, OpenClaw)\n\n**Recent Projects:**\n\u2022 Built automated job application system using Python and Playwright\n\u2022 Created trading bot with risk management and monitoring\n\u2022 Developed multi-agent AI systems for business automation\n\u2022 Implemented data pipelines for processing and analysis\n\n**Why Remote Work Suits Me:**\nI am highly self-motivated and thrive in independent work environments. I have experience collaborating across time zones and am comfortable with asynchronous communication. My flexible schedule allows me to be available when needed.\n\n**What I Offer:**\nI don't just write code\u2014I solve problems. I leverage AI tools to accelerate development while maintaining code quality. I'm a fast learner who can quickly adapt to your tech stack and workflows.\n\nI am available to start immediately and can work 40+ hours per week across any time zone. I would love to discuss how I can contribute to Stellar AI's development team.\n\nThank you for your consideration.\n\nBest regards,\nJames Ready\njames.ready@example.com\nLinkedIn: linkedin.com/in/jamesready\n\n---\n*Portfolio and references available upon request*\n",
+  "answers": {
+    "why_hire": "I bring a unique mix of development skills and AI tool proficiency. I can write clean code while leveraging AI to accelerate development. I'm self-motivated, a fast learner, and comfortable working independently across time zones.",
+    "experience": "I have 3 years of experience in software development and automation. I've built systems for trading, job applications, and business automation. I'm proficient in Python, JavaScript, and various AI tools. I learn quickly and adapt to new technologies.",
+    "salary": "Negotiable - flexible for right opportunity",
+    "remote": "I have 3 years of experience in software development and automation. I've built systems for trading, job applications, and business automation. I'm proficient in Python, JavaScript, and various AI tools. I learn quickly and adapt to new technologies."
+  },
+  "prepared_at": "2026-03-13T11:58:27.725745",
+  "status": "ready_to_apply"
+}

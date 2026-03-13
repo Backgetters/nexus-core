@@ -1,0 +1,35 @@
+Dear Hiring Manager,
+
+I am excited to apply for the Senior Frontend Engineer position at Level. As a self-taught developer with hands-on experience building automation systems and working with AI tools, I bring a unique combination of technical skills and practical problem-solving ability.
+
+**Technical Skills:**
+• Python (automation, web scraping, data processing)
+• JavaScript and web development
+• API integration and automation
+• Git version control
+• SQL databases
+• AI/ML tools (ChatGPT, Claude, OpenClaw)
+
+**Recent Projects:**
+• Built automated job application system using Python and Playwright
+• Created trading bot with risk management and monitoring
+• Developed multi-agent AI systems for business automation
+• Implemented data pipelines for processing and analysis
+
+**Why Remote Work Suits Me:**
+I am highly self-motivated and thrive in independent work environments. I have experience collaborating across time zones and am comfortable with asynchronous communication. My flexible schedule allows me to be available when needed.
+
+**What I Offer:**
+I don't just write code—I solve problems. I leverage AI tools to accelerate development while maintaining code quality. I'm a fast learner who can quickly adapt to your tech stack and workflows.
+
+I am available to start immediately and can work 40+ hours per week across any time zone. I would love to discuss how I can contribute to Level's development team.
+
+Thank you for your consideration.
+
+Best regards,
+James Ready
+james.ready@example.com
+LinkedIn: linkedin.com/in/jamesready
+
+---
+*Portfolio and references available upon request*

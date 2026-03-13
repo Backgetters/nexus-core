@@ -1,0 +1,12 @@
+Q: why_hire
+A: I bring a unique mix of development skills and AI tool proficiency. I can write clean code while leveraging AI to accelerate development. I'm self-motivated, a fast learner, and comfortable working independently across time zones.
+
+Q: experience
+A: I have 3 years of experience in software development and automation. I've built systems for trading, job applications, and business automation. I'm proficient in Python, JavaScript, and various AI tools. I learn quickly and adapt to new technologies.
+
+Q: salary
+A: Negotiable - flexible for right opportunity
+
+Q: remote
+A: I have 3 years of experience in software development and automation. I've built systems for trading, job applications, and business automation. I'm proficient in Python, JavaScript, and various AI tools. I learn quickly and adapt to new technologies.
+

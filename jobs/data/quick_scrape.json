@@ -1,0 +1,24 @@
+{
+  "scraped_at": "2026-03-13T11:57:27.307683",
+  "total_jobs": 3,
+  "jobs": [
+    {
+      "title": "Senior Frontend Engineer",
+      "company": "Level",
+      "source": "RemoteOK",
+      "type": "remote"
+    },
+    {
+      "title": "Technical Product Manager",
+      "company": "LaunchBrightly",
+      "source": "RemoteOK",
+      "type": "remote"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Stellar AI",
+      "source": "RemoteOK",
+      "type": "remote"
+    }
+  ]
+}
