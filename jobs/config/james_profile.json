@@ -1,0 +1,111 @@
+{
+  "name": "James Ready",
+  "email": "james.ready@example.com",
+  "phone": "",
+  "linkedin": "linkedin.com/in/jamesready",
+  "portfolio": "",
+  "resume_path": "~/clawd/jobs/data/resume_james_ready.pdf",
+  
+  "desired_roles": [
+    "Data Entry Specialist",
+    "Data Entry Clerk",
+    "Remote Data Entry",
+    "Software Developer",
+    "Software Engineer",
+    "Full Stack Developer",
+    "AI Developer",
+    "Automation Engineer",
+    "Python Developer",
+    "Remote Developer",
+    "Junior Developer",
+    "Entry Level Programmer"
+  ],
+  
+  "locations": [
+    "remote",
+    "work from home",
+    "wfh",
+    "anywhere",
+    "virtual",
+    "online"
+  ],
+  
+  "job_types": [
+    "full-time",
+    "part-time",
+    "contract",
+    "freelance",
+    "flexible",
+    "gig"
+  ],
+  
+  "schedule_preferences": {
+    "flexible_hours": true,
+    "async_work": true,
+    "multiple_timezones": true,
+    "weekends_ok": true,
+    "evenings_ok": true
+  },
+  
+  "min_salary": 0,
+  "salary_expectation": "Negotiable - flexible for right opportunity",
+  
+  "years_experience": 3,
+  
+  "skills": [
+    "Python",
+    "JavaScript",
+    "Data Entry",
+    "Excel",
+    "Google Sheets",
+    "Automation",
+    "Web Scraping",
+    "API Integration",
+    "OpenClaw",
+    "AI Tools",
+    "ChatGPT",
+    "Claude",
+    "Git",
+    "SQL",
+    "Data Processing",
+    "Research",
+    "Technical Writing",
+    "Problem Solving",
+    "Fast Learner",
+    "Self-Motivated"
+  ],
+  
+  "industries": [
+    "Technology",
+    "Software Development",
+    "Data Services",
+    "AI/ML",
+    "Remote Work",
+    "Digital Services",
+    "Consulting"
+  ],
+  
+  "experience_summary": "Experienced in data entry, automation, and software development. Proficient with AI tools and able to leverage technology to complete tasks efficiently. Self-motivated and comfortable working across different time zones.",
+  
+  "strengths": [
+    "Fast learner with new software",
+    "Detail-oriented for data entry",
+    "Can work independently",
+    "Flexible schedule across time zones",
+    "Tech-savvy with AI tools",
+    "Reliable and consistent"
+  ],
+  
+  "equipment": [
+    "High-speed internet",
+    "Modern laptop",
+    "Quiet workspace",
+    "Available 40+ hours/week"
+  ],
+  
+  "availability": {
+    "hours_per_week": "40+",
+    "preferred_times": "Flexible - can work any timezone",
+    "start_date": "Immediately"
+  }
+}

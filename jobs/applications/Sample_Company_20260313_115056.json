@@ -1,0 +1,106 @@
+{
+  "job_title": "Data Entry Specialist",
+  "company": "Sample Company",
+  "cover_letter": "Dear Hiring Manager,\n\nI am writing to express my interest in the Data Entry Specialist position at Sample Company. As a detail-oriented professional with experience in data processing and automation, I am confident I can contribute effectively to your team.\n\n**Why I'm a great fit:**\n\u2022 Fast and accurate data entry skills (typing speed: 70+ WPM)\n\u2022 Proficient with Excel, Google Sheets, and data management tools\n\u2022 Experience automating repetitive tasks using Python and AI tools\n\u2022 Highly organized with strong attention to detail\n\u2022 Comfortable working independently across different time zones\n\u2022 Flexible schedule - available 40+ hours per week\n\n**What I bring:**\nI leverage technology to work efficiently. Using AI tools and automation scripts, I can process large volumes of data quickly while maintaining accuracy. I'm a fast learner who adapts quickly to new software and workflows.\n\n**Availability:**\nI am available to start immediately and can work flexible hours across any time zone. I have a dedicated workspace, high-speed internet, and all necessary equipment.\n\nI would welcome the opportunity to discuss how I can support Sample Company's data needs. Thank you for considering my application.\n\nBest regards,\nJames Ready\njames.ready@example.com\n\n---\n*References available upon request*\n",
+  "resume_summary": "Results-driven professional with expertise in data processing, automation, and software development. \nProficient in leveraging AI tools and Python to optimize workflows and increase efficiency. \nHighly self-motivated with proven ability to work independently across time zones. \nSeeking remote opportunities with flexible hours.",
+  "profile": {
+    "name": "James Ready",
+    "email": "james.ready@example.com",
+    "phone": "",
+    "linkedin": "linkedin.com/in/jamesready",
+    "portfolio": "",
+    "resume_path": "~/clawd/jobs/data/resume_james_ready.pdf",
+    "desired_roles": [
+      "Data Entry Specialist",
+      "Data Entry Clerk",
+      "Remote Data Entry",
+      "Software Developer",
+      "Software Engineer",
+      "Full Stack Developer",
+      "AI Developer",
+      "Automation Engineer",
+      "Python Developer",
+      "Remote Developer",
+      "Junior Developer",
+      "Entry Level Programmer"
+    ],
+    "locations": [
+      "remote",
+      "work from home",
+      "wfh",
+      "anywhere",
+      "virtual",
+      "online"
+    ],
+    "job_types": [
+      "full-time",
+      "part-time",
+      "contract",
+      "freelance",
+      "flexible",
+      "gig"
+    ],
+    "schedule_preferences": {
+      "flexible_hours": true,
+      "async_work": true,
+      "multiple_timezones": true,
+      "weekends_ok": true,
+      "evenings_ok": true
+    },
+    "min_salary": 0,
+    "salary_expectation": "Negotiable - flexible for right opportunity",
+    "years_experience": 3,
+    "skills": [
+      "Python",
+      "JavaScript",
+      "Data Entry",
+      "Excel",
+      "Google Sheets",
+      "Automation",
+      "Web Scraping",
+      "API Integration",
+      "OpenClaw",
+      "AI Tools",
+      "ChatGPT",
+      "Claude",
+      "Git",
+      "SQL",
+      "Data Processing",
+      "Research",
+      "Technical Writing",
+      "Problem Solving",
+      "Fast Learner",
+      "Self-Motivated"
+    ],
+    "industries": [
+      "Technology",
+      "Software Development",
+      "Data Services",
+      "AI/ML",
+      "Remote Work",
+      "Digital Services",
+      "Consulting"
+    ],
+    "experience_summary": "Experienced in data entry, automation, and software development. Proficient with AI tools and able to leverage technology to complete tasks efficiently. Self-motivated and comfortable working across different time zones.",
+    "strengths": [
+      "Fast learner with new software",
+      "Detail-oriented for data entry",
+      "Can work independently",
+      "Flexible schedule across time zones",
+      "Tech-savvy with AI tools",
+      "Reliable and consistent"
+    ],
+    "equipment": [
+      "High-speed internet",
+      "Modern laptop",
+      "Quiet workspace",
+      "Available 40+ hours/week"
+    ],
+    "availability": {
+      "hours_per_week": "40+",
+      "preferred_times": "Flexible - can work any timezone",
+      "start_date": "Immediately"
+    }
+  },
+  "generated_at": "2026-03-13T11:50:56.465165"
+}
