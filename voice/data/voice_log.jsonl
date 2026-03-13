@@ -1,1 +1,4 @@
 {"timestamp": "2026-03-13T15:53:23.335933", "direction": "sent", "content": "NEXUS voice system is now active. I can hear you and respond by voice.", "source": "voice"}
+{"timestamp": "2026-03-13T15:57:52.471685", "direction": "received", "content": "Error: openai package not installed. Run: pip install openai", "source": "telegram"}
+{"timestamp": "2026-03-13T15:58:09.485891", "direction": "received", "content": "Error: OPENAI_API_KEY not set", "source": "telegram"}
+{"timestamp": "2026-03-13T16:00:06.395863", "direction": "received", "content": "Transcription error: Connection error.", "source": "telegram"}
