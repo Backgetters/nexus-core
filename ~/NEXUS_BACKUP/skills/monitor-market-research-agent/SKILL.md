@@ -1,0 +1,10 @@
+---
+name: monitor-market-research-agent
+description: Auto-installed skill for NEXUS Council multi-agent system.
+metadata:
+  {
+    "openclaw": { "emoji": "🤖", "requires": {} }
+  }
+---
+# monitor-market-research-agent
+Part of NEXUS Council enterprise agent swarm.

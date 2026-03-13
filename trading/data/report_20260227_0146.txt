@@ -1,0 +1,35 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║           NEXUS TRADING BOT - SIGNAL REPORT                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+Session: 2026-02-27 01:46
+Runtime: 0:00:00.601773
+
+📊 PERFORMANCE
+──────────────
+Daily P&L:     $0.00
+Daily Trades:  6
+Total Trades:  0
+Consecutive Losses: 0
+
+💡 CURRENT SIGNALS
+─────────────────
+BTC: BUY $50.0 @ $67,756.49
+  → Execute: Buy 0.000738 BTC
+  → Reason: DCA schedule
+ETH: BUY $50.0 @ $2,036.29
+  → Execute: Buy 0.024555 ETH
+  → Reason: DCA schedule
+
+🎯 EXECUTION CHECKLIST
+─────────────────────
+[ ] Check Coinbase balance
+[ ] Verify 5.0% daily loss limit not hit
+[ ] Execute trades
+[ ] Log results
+
+Next Check: 05:46
+
+═══════════════════════════════════════════════════════════════
+        

@@ -1,0 +1,18 @@
+{
+  "lastChecks": {
+    "agents": 1741147577,
+    "earnings": 1741147577,
+    "recovery_log": 1741147577,
+    "system_health": 1741147577
+  },
+  "agent_status": {
+    "alpha": "stopped",
+    "beta": "stopped",
+    "count": 0
+  },
+  "earnings_files": {
+    "status": "archived",
+    "note": "NEXUS agents offline per HEARTBEAT.md directive"
+  },
+  "next_check": "2026-03-05 02:00 EST"
+}

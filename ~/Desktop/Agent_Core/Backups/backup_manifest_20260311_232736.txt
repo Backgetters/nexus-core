@@ -1,0 +1,10 @@
+NEXUS Memory Backup Manifest
+Created: 2026-03-11 23:27:36 EDT
+Timestamp: 20260311_232736
+
+Files backed up:
+-rw-r--r--  1 tomegathericon  staff     107 Mar 11 23:27 ~/Desktop/Agent_Core/Backups/backup_manifest_20260311_232736.txt
+-rw-r--r--  1 tomegathericon  staff     425 Mar 11 23:27 ~/Desktop/Agent_Core/Backups/earnings_gpt_4o_20260311_232736.jsonl
+-rw-r--r--  1 tomegathericon  staff  344614 Mar 11 23:27 ~/Desktop/Agent_Core/Backups/earnings_nexus_alpha_20260311_232736.jsonl
+-rw-r--r--  1 tomegathericon  staff  341139 Mar 11 23:27 ~/Desktop/Agent_Core/Backups/earnings_nexus_beta_20260311_232736.jsonl
+-rw-r--r--  1 tomegathericon  staff    5366 Mar 11 23:27 ~/Desktop/Agent_Core/Backups/MEMORY_20260311_232736.md

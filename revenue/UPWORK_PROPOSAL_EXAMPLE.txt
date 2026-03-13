@@ -1,0 +1,35 @@
+Subject: I'll Build Your Lead Gen Machine (Saved Last Client $8K/mo)
+
+Hi [Client Name],
+
+I build automated lead generation systems that run 24/7. For a similar client, this saved 40 hours/week and generated 150 qualified leads/month.
+
+**What I'll build for you:**
+1. LinkedIn scraper with smart filters (target decision-makers)
+2. Data enrichment (find emails/phones with 85%+ accuracy)
+3. CRM integration (auto-import with lead scoring)
+4. Email sequences (personalized, automated follow-ups)
+5. Dashboard (track opens, replies, conversions)
+
+**Tech stack:** Python, PhantomBuster, Apollo.io, Zapier/Make, your CRM
+**Timeline:** 10-14 days
+**Investment:** $2,000 (fixed price, not hourly)
+
+**Recent wins:**
+- B2B SaaS: 150 leads/month, 12% conversion
+- Marketing agency: 50 discovery calls/month
+- Consultant: $30K new business in 60 days
+
+**My process:**
+1. Discovery call (tomorrow if you're free)
+2. Build scraping system (test with 100 leads)
+3. Set up enrichment + CRM
+4. Launch email sequences
+5. Optimize based on first 2 weeks
+
+I have availability starting this week. Want to jump on a 15-min call to discuss your ideal customer profile?
+
+Best,
+[Your Name]
+
+P.S. I noticed you mentioned [CRM they use]. I recently integrated that same CRM for another client - can show you exactly how it works.

@@ -1,0 +1,18 @@
+# NEXUS 24/7 Monitoring Cron Jobs - HOURLY SCHEDULE
+# Install with: openclaw cron add --from-file nexus_monitoring.cron
+# Updated: Every hour to reduce token consumption
+
+# System Health Check - Every hour (at :00)
+0 * * * * echo "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. Check system health: run ~/clawd/monitoring/system_health.sh silently. If any alerts found in ~/clawd/monitoring/alerts/, report them immediately. Otherwise reply HEARTBEAT_OK."
+
+# Email Monitoring - Every hour (at :15)
+15 * * * * echo "Check for new important emails using available email tools. Look for: client inquiries, payment notifications, urgent messages. If found, summarize and alert. If nothing urgent, reply HEARTBEAT_OK."
+
+# Market Intelligence - Every 2 hours (at :01 past even hours)
+1 */2 * * * echo "Run market intelligence scan: Check competitor news, industry blogs via blogwatcher, Reddit for relevant discussions. Summarize key findings in ~/clawd/monitoring/logs/market_intel_$(date +%Y%m%d).log"
+
+# GitHub Monitoring - Every hour (at :30)
+30 * * * * echo "Check GitHub for: new issues, PRs requiring review, mentions. Use gh cli. Report anything needing immediate attention."
+
+# Daily Summary - 9 AM
+0 9 * * * echo "Generate daily monitoring summary: Compile all alerts from last 24h, check calendar for today, review overnight market intel. Post summary to ~/clawd/monitoring/logs/daily_summary_$(date +%Y%m%d).md"

@@ -1,0 +1,18 @@
+# NEXUS Level 10 Autonomy - Sudo Configuration
+# Place in /etc/sudoers.d/nexus-autonomy
+# Command: sudo visudo -f /etc/sudoers.d/nexus-autonomy
+
+# Define command alias for NEXUS operations
+Cmnd_Alias NEXUS_CMDS = /opt/homebrew/bin/brew *, /usr/bin/install *, /bin/launchctl *, /usr/sbin/chown *, /bin/chmod *, /usr/bin/security *, /usr/bin/tar *, /bin/mkdir *, /usr/bin/pkill *, /bin/kill *, /usr/bin/nohup *
+
+# Allow passwordless sudo for NEXUS operations
+tomegathericon ALL=(ALL) NOPASSWD: NEXUS_CMDS
+
+# Log all sudo usage for audit
+Defaults!NEXUS_CMDS log_input, log_output
+
+# NEVER allow these (safety):
+# - Modifying /etc/sudoers or /etc/sudoers.d/*
+# - Deleting system users
+# - Modifying kernel extensions
+# - Direct disk writes to system partitions

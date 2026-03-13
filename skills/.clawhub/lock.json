@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "skills": {
+    "trading": {
+      "version": "1.0.1",
+      "installedAt": 1773370609110
+    },
+    "linkedin-api": {
+      "version": "1.0.3",
+      "installedAt": 1773370611512
+    },
+    "automation-workflows": {
+      "version": "0.1.0",
+      "installedAt": 1773370613412
+    },
+    "data-analysis": {
+      "version": "1.0.2",
+      "installedAt": 1773370615728
+    },
+    "sales": {
+      "version": "1.0.0",
+      "installedAt": 1773370618235
+    },
+    "security-auditor": {
+      "version": "1.0.0",
+      "installedAt": 1773370621394
+    },
+    "devops": {
+      "version": "1.0.0",
+      "installedAt": 1773370623334
+    },
+    "marketing-mode": {
+      "version": "1.0.0",
+      "installedAt": 1773370634716
+    },
+    "ai-data-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1773370636551
+    },
+    "crypto-trading": {
+      "version": "1.0.0",
+      "installedAt": 1773370638327
+    }
+  }
+}

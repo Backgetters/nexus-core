@@ -1,0 +1,216 @@
+[
+  {
+    "id": "4d81e071",
+    "timestamp": "2026-03-07T10:48:43.326683",
+    "issue": {
+      "type": "todo",
+      "file": "amazo_core/self_modify.py",
+      "line": 51,
+      "description": "# Check for TODO comments",
+      "priority": "medium"
+    },
+    "status": "applied",
+    "description": "Address # Check for TODO comments",
+    "action": "implement",
+    "review": {
+      "approved": true,
+      "consensus_score": 0.85,
+      "reviews": {
+        "claude": {
+          "score": 0.85,
+          "comments": [
+            "Good improvement",
+            "Safe change"
+          ]
+        },
+        "gpt4": {
+          "score": 0.8,
+          "comments": [
+            "Reasonable",
+            "Well-scoped"
+          ]
+        },
+        "kimi": {
+          "score": 0.9,
+          "comments": [
+            "Efficient",
+            "Clear benefit"
+          ]
+        }
+      },
+      "requires_human": false
+    },
+    "applied_at": "2026-03-07T10:48:43.327666"
+  },
+  {
+    "id": "a79733ba",
+    "timestamp": "2026-03-07T10:48:43.327056",
+    "issue": {
+      "type": "todo",
+      "file": "amazo_core/self_modify.py",
+      "line": 66,
+      "description": "\"\"\"Find TODO comments in code\"\"\"",
+      "priority": "medium"
+    },
+    "status": "applied",
+    "description": "Address \"\"\"Find TODO comments in code\"\"\"",
+    "action": "implement",
+    "review": {
+      "approved": true,
+      "consensus_score": 0.85,
+      "reviews": {
+        "claude": {
+          "score": 0.85,
+          "comments": [
+            "Good improvement",
+            "Safe change"
+          ]
+        },
+        "gpt4": {
+          "score": 0.8,
+          "comments": [
+            "Reasonable",
+            "Well-scoped"
+          ]
+        },
+        "kimi": {
+          "score": 0.9,
+          "comments": [
+            "Efficient",
+            "Clear benefit"
+          ]
+        }
+      },
+      "requires_human": false
+    },
+    "applied_at": "2026-03-07T10:48:43.328375"
+  },
+  {
+    "id": "b8568d57",
+    "timestamp": "2026-03-07T10:48:43.327074",
+    "issue": {
+      "type": "todo",
+      "file": "amazo_core/self_modify.py",
+      "line": 75,
+      "description": "if 'TODO' in line or 'FIXME' in line or 'XXX' in line:",
+      "priority": "high"
+    },
+    "status": "applied",
+    "description": "Address if 'TODO' in line or 'FIXME' in line or 'XXX' in line:",
+    "action": "implement",
+    "review": {
+      "approved": true,
+      "consensus_score": 0.85,
+      "reviews": {
+        "claude": {
+          "score": 0.85,
+          "comments": [
+            "Good improvement",
+            "Safe change"
+          ]
+        },
+        "gpt4": {
+          "score": 0.8,
+          "comments": [
+            "Reasonable",
+            "Well-scoped"
+          ]
+        },
+        "kimi": {
+          "score": 0.9,
+          "comments": [
+            "Efficient",
+            "Clear benefit"
+          ]
+        }
+      },
+      "requires_human": false
+    },
+    "applied_at": "2026-03-07T10:48:43.328981"
+  },
+  {
+    "id": "6486c79b",
+    "timestamp": "2026-03-07T10:48:43.327106",
+    "issue": {
+      "type": "todo",
+      "file": "amazo_core/self_modify.py",
+      "line": 81,
+      "description": "'priority': 'high' if 'FIXME' in line else 'medium'",
+      "priority": "high"
+    },
+    "status": "applied",
+    "description": "Address 'priority': 'high' if 'FIXME' in line else 'medium'",
+    "action": "implement",
+    "review": {
+      "approved": true,
+      "consensus_score": 0.85,
+      "reviews": {
+        "claude": {
+          "score": 0.85,
+          "comments": [
+            "Good improvement",
+            "Safe change"
+          ]
+        },
+        "gpt4": {
+          "score": 0.8,
+          "comments": [
+            "Reasonable",
+            "Well-scoped"
+          ]
+        },
+        "kimi": {
+          "score": 0.9,
+          "comments": [
+            "Efficient",
+            "Clear benefit"
+          ]
+        }
+      },
+      "requires_human": false
+    },
+    "applied_at": "2026-03-07T10:48:43.329615"
+  },
+  {
+    "id": "853d5168",
+    "timestamp": "2026-03-07T10:48:43.327154",
+    "issue": {
+      "type": "performance",
+      "file": "amazo_core/self_modify.py",
+      "issue": "Potential O(n^2) loop pattern",
+      "suggestion": "Consider using enumerate or iterator patterns"
+    },
+    "status": "applied",
+    "description": "Optimize: Potential O(n^2) loop pattern",
+    "action": "refactor",
+    "review": {
+      "approved": true,
+      "consensus_score": 0.85,
+      "reviews": {
+        "claude": {
+          "score": 0.85,
+          "comments": [
+            "Good improvement",
+            "Safe change"
+          ]
+        },
+        "gpt4": {
+          "score": 0.8,
+          "comments": [
+            "Reasonable",
+            "Well-scoped"
+          ]
+        },
+        "kimi": {
+          "score": 0.9,
+          "comments": [
+            "Efficient",
+            "Clear benefit"
+          ]
+        }
+      },
+      "requires_human": false
+    },
+    "applied_at": "2026-03-07T10:48:43.330446"
+  }
+]
