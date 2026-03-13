@@ -48,3 +48,15 @@ coverage/
 dist/
 build/
 *.egg-info/
+
+# Embedded Git Repositories (managed separately)
+fintool/
+manifest-router/
+moltdirectory/
+products/api-gateway/
+temp-skills-repo/
+super-repo/*/
+tools/graphthulhu/
+
+# NEXUS (separate repo)
+NEXUS/
