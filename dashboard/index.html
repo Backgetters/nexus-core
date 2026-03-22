@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS Mission Control</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #00ff88;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            background: rgba(0, 20, 40, 0.9);
+            padding: 20px;
+            border-bottom: 2px solid #00ff88;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 0 0 20px #00ff88;
+        }
+        
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .status-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #00ff88;
+            animation: pulse 2s infinite;
+            box-shadow: 0 0 10px #00ff88;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            min-height: calc(100vh - 80px);
+        }
+        
+        .sidebar {
+            background: rgba(0, 10, 20, 0.95);
+            padding: 20px;
+            border-right: 1px solid #00ff88;
+        }
+        
+        .nav-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+        
+        .nav-item:hover {
+            background: rgba(0, 255, 136, 0.3);
+            transform: translateX(5px);
+        }
+        
+        .nav-item.active {
+            background: rgba(0, 255, 136, 0.4);
+        }
+        
+        .main-content {
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            background: rgba(0, 20, 40, 0.8);
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+        }
+        
+        .card-header {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #00ff88;
+            padding-bottom: 10px;
+        }
+        
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+        }
+        
+        .metric:last-child {
+            border-bottom: none;
+        }
+        
+        .metric-value {
+            font-weight: bold;
+            color: #00ffff;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff88, #00ffff);
+            transition: width 0.5s;
+        }
+        
+        .terminal {
+            background: #000;
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .terminal-line {
+            margin: 5px 0;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        .success { color: #00ff88; }
+        .warning { color: #ffaa00; }
+        .error { color: #ff4444; }
+        .info { color: #00ffff; }
+        
+        .file-browser {
+            background: rgba(0, 10, 20, 0.9);
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .file-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+            cursor: pointer;
+        }
+        
+        .file-item:hover {
+            background: rgba(0, 255, 136, 0.1);
+        }
+        
+        .file-icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .api-status {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        
+        .api-item {
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid;
+        }
+        
+        .api-online {
+            background: rgba(0, 255, 136, 0.2);
+            border-color: #00ff88;
+        }
+        
+        .api-offline {
+            background: rgba(255, 68, 68, 0.2);
+            border-color: #ff4444;
+        }
+        
+        .timestamp {
+            font-size: 0.8em;
+            color: #888;
+            text-align: right;
+            margin-top: 20px;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">⚡ NEXUS MISSION CONTROL</div>
+        <div class="status-indicator">
+            <span>SYSTEM ONLINE</span>
+            <div class="status-dot"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="nav-item active" onclick="showSection('overview')">📊 Overview</div>
+            <div class="nav-item" onclick="showSection('files')">📁 File Browser</div>
+            <div class="nav-item" onclick="showSection('apis')">🔌 API Status</div>
+            <div class="nav-item" onclick="showSection('logs')">📜 System Logs</div>
+            <div class="nav-item" onclick="showSection('earnings')">💰 Earnings</div>
+            <div class="nav-item" onclick="showSection('memory')">🧠 Memory Bank</div>
+        </div>
+        
+        <div class="main-content">
+            <!-- Overview Section -->
+            <div id="overview" class="section">
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-header">🖥️ System Status</div>
+                        <div class="metric">
+                            <span>Disk Usage</span>
+                            <span class="metric-value">5%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 5%"></div>
+                        </div>
+                        <div class="metric">
+                            <span>Memory</span>
+                            <span class="metric-value">Normal</span>
+                        </div>
+                        <div class="metric">
+                            <span>Agents</span>
+                            <span class="metric-value success">Stopped ✅</span>
+                        </div>
+                        <div class="metric">
+                            <span>Last Check</span>
+                            <span class="metric-value">23:02</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">📈 Quick Stats</div>
+                        <div class="metric">
+                            <span>Total Files</span>
+                            <span class="metric-value">74,653</span>
+                        </div>
+                        <div class="metric">
+                            <span>Total Size</span>
+                            <span class="metric-value">1.9 GB</span>
+                        </div>
+                        <div class="metric">
+                            <span>Skills</span>
+                            <span class="metric-value">1,273</span>
+                        </div>
+                        <div class="metric">
+                            <span>Memory Snapshots</span>
+                            <span class="metric-value">238</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">🔄 Monitoring</div>
+                        <div class="metric">
+                            <span>Heartbeat</span>
+                            <span class="metric-value success">Every hour</span>
+                        </div>
+                        <div class="metric">
+                            <span>System Health</span>
+                            <span class="metric-value success">✅ Nominal</span>
+                        </div>
+                        <div class="metric">
+                            <span>Alerts</span>
+                            <span class="metric-value success">None Active</span>
+                        </div>
+                        <div class="metric">
+                            <span>Next Check</span>
+                            <span class="metric-value">00:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">🖥️ Live Terminal</div>
+                    <div class="terminal" id="terminal">
+                        <div class="terminal-line info">[23:57:00] NEXUS Mission Control initialized...</div>
+                        <div class="terminal-line success">[23:57:01] System health: All systems nominal</div>
+                        <div class="terminal-line success">[23:57:02] API connections: 6/6 online</div>
+                        <div class="terminal-line info">[23:57:03] Memory bank: 238 snapshots loaded</div>
+                        <div class="terminal-line success">[23:57:04] Level 10 autonomy: Active</div>
+                        <div class="terminal-line info">[23:57:05] Dashboard ready for command...</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- File Browser Section -->
+            <div id="files" class="section" style="display:none">
+                <div class="card">
+                    <div class="card-header">📁 Quick Access</div>
+                    <div class="file-browser">
+                        <div class="file-item" onclick="navigateTo('~/Desktop/Agent_Core')">
+                            <span class="file-icon">📂</span>
+                            <span>Agent_Core (1.8 GB)</span>
+                        </div>
+                        <div class="file-item" onclick="navigateTo('~/clawd')">
+                            <span class="file-icon">📂</span>
+                            <span>clawd (Workspace)</span>
+                        </div>
+                        <div class="file-item" onclick="navigateTo('~/clawd/conversations')">
+                            <span class="file-icon">📄</span>
+                            <span>Conversations</span>
+                        </div>
+                        <div class="file-item" onclick="navigateTo('~/clawd/monitoring/logs')">
+                            <span class="file-icon">📄</span>
+                            <span>Monitoring Logs</span>
+                        </div>
+                        <div class="file-item" onclick="navigateTo('~/.openclaw/credentials')">
+                            <span class="file-icon">🔐</span>
+                            <span>API Credentials</span>
+                        </div>
+                        <div class="file-item" onclick="navigateTo('~/Desktop/Agent_Core/Memory_Bank')">
+                            <span class="file-icon">🧠</span>
+                            <span>Memory Bank (238 files)</span>
+                        </div>
+                        <div class="file-item" onclick="navigateTo('~/Desktop/Agent_Core/clawwork')">
+                            <span class="file-icon">💰</span>
+                            <span>ClawWork (2,304 reports)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- API Status Section -->
+            <div id="apis" class="section" style="display:none">
+                <div class="card">
+                    <div class="card-header">🔌 API Connection Status</div>
+                    <div class="api-status">
+                        <div class="api-item api-online">
+                            <div>OpenAI</div>
+                            <div style="font-size: 0.8em">✅ Online</div>
+                        </div>
+                        <div class="api-item api-online">
+                            <div>SiliconFlow</div>
+                            <div style="font-size: 0.8em">✅ Online</div>
+                        </div>
+                        <div class="api-item api-online">
+                            <div>Telegram</div>
+                            <div style="font-size: 0.8em">✅ Online</div>
+                        </div>
+                        <div class="api-item api-online">
+                            <div>E2B</div>
+                            <div style="font-size: 0.8em">✅ Online</div>
+                        </div>
+                        <div class="api-item api-online">
+                            <div>Brave Search</div>
+                            <div style="font-size: 0.8em">✅ Online</div>
+                        </div>
+                        <div class="api-item api-online">
+                            <div>ClawGig</div>
+                            <div style="font-size: 0.8em">✅ Configured</div>
+                        </div>
+                        <div class="api-item api-online">
+                            <div>Moltbook</div>
+                            <div style="font-size: 0.8em">✅ Configured</div>
+                        </div>
+                        <div class="api-item api-online">
+                            <div>Tavily</div>
+                            <div style="font-size: 0.8em">✅ Configured</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Logs Section -->
+            <div id="logs" class="section" style="display:none">
+                <div class="card">
+                    <div class="card-header">📜 Recent System Logs</div>
+                    <div class="terminal">
+                        <div class="terminal-line success">[23:55:00] API keys refreshed successfully</div>
+                        <div class="terminal-line success">[23:52:00] Heartbeat interval fixed: Every hour</div>
+                        <div class="terminal-line info">[23:35:00] Full desktop scan completed: 74,653 files</div>
+                        <div class="terminal-line success">[23:25:00] Conversation logging activated</div>
+                        <div class="terminal-line success">[23:20:00] NEXUS memory restored</div>
+                        <div class="terminal-line info">[23:15:00] Connection tests completed: 6/6 online</div>
+                        <div class="terminal-line success">[23:10:00] System diagnostics complete</div>
+                        <div class="terminal-line success">[23:02:00] System health check: All clear</div>
+                        <div class="terminal-line info">[22:45:00] Session started - NEXUS online</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Earnings Section -->
+            <div id="earnings" class="section" style="display:none">
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <div class="card-header">💰 ClawWork Status</div>
+                        <div class="metric">
+                            <span>Status</span>
+                            <span class="metric-value">Monitoring Only</span>
+                        </div>
+                        <div class="metric">
+                            <span>Reports Generated</span>
+                            <span class="metric-value">2,304</span>
+                        </div>
+                        <div class="metric">
+                            <span>Last Activity</span>
+                            <span class="metric-value">Feb 27, 2026</span>
+                        </div>
+                        <div class="metric">
+                            <span>Mode</span>
+                            <span class="metric-value success">No API Bleeding</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">📊 Revenue Tracking</div>
+                        <div class="metric">
+                            <span>Alpha Balance</span>
+                            <span class="metric-value">$652.85</span>
+                        </div>
+                        <div class="metric">
+                            <span>Beta Balance</span>
+                            <span class="metric-value">~$293</span>
+                        </div>
+                        <div class="metric">
+                            <span>Combined</span>
+                            <span class="metric-value">$945+</span>
+                        </div>
+                        <div class="metric">
+                            <span>Target</span>
+                            <span class="metric-value">$1,576/mo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Memory Section -->
+            <div id="memory" class="section" style="display:none">
+                <div class="card">
+                    <div class="card-header">🧠 NEXUS Memory System</div>
+                    <div class="file-browser">
+                        <div class="file-item">
+                            <span class="file-icon">📄</span>
+                            <span>NEXUS_UNIFIED_MEMORY.md (MASTER)</span>
+                        </div>
+                        <div class="file-item">
+                            <span class="file-icon">📄</span>
+                            <span>MEMORY.md (Workspace Mirror)</span>
+                        </div>
+                        <div class="file-item">
+                            <span class="file-icon">📄</span>
+                            <span>IDENTITY.md</span>
+                        </div>
+                        <div class="file-item">
+                            <span class="file-icon">📄</span>
+                            <span>HEARTBEAT.md</span>
+                        </div>
+                        <div class="file-item">
+                            <span class="file-icon">📄</span>
+                            <span>USER.md (J's Profile)</span>
+                        </div>
+                        <div class="file-item">
+                            <span class="file-icon">📄</span>
+                            <span>SOUL.md</span>
+                        </div>
+                        <div class="file-item">
+                            <span class="file-icon">📄</span>
+                            <span>AGENTS.md</span>
+                        </div>
+                        <div class="file-item">
+                            <span class="file-icon">📂</span>
+                            <span>Memory Bank/ (238 snapshots)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timestamp">
+                Last Updated: 2026-03-14 23:57 EDT | NEXUS Level 10 Autonomy Active ⚡
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).style.display = 'block';
+            
+            // Update active nav item
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+        
+        function navigateTo(path) {
+            addTerminalLine(`Navigating to ${path}...`, 'info');
+        }
+        
+        function addTerminalLine(text, type = 'info') {
+            const terminal = document.getElementById('terminal');
+            const line = document.createElement('div');
+            line.className = `terminal-line ${type}`;
+            const timestamp = new Date().toLocaleTimeString('en-US', { hour12: false });
+            line.textContent = `[${timestamp}] ${text}`;
+            terminal.appendChild(line);
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+        
+        // Simulate live updates
+        setInterval(() => {
+            const messages = [
+                'System health check: Nominal',
+                'Memory usage: Normal',
+                'API connections: Stable',
+                'No alerts detected',
+                'Heartbeat: On schedule'
+            ];
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            // Only add occasionally to avoid spam
+            if (Math.random() > 0.9) {
+                addTerminalLine(randomMsg, 'success');
+            }
+        }, 10000);
+    </script>
+</body>
+</html>

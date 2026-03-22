@@ -1,0 +1,9 @@
+total 1376
+drwx------    7 tomegathericon  staff     224 Mar 15 04:37 .
+drwxr-xr-x  195 tomegathericon  staff    6240 Mar 15 04:37 ..
+-rw-------    1 tomegathericon  staff    5366 Mar 15 04:37 MEMORY.md
+-rw-------    1 tomegathericon  staff     425 Mar 15 04:37 earnings_gpt_4o.jsonl
+-rw-------    1 tomegathericon  staff  344614 Mar 15 04:37 earnings_nexus_alpha.jsonl
+-rw-------    1 tomegathericon  staff  341139 Mar 15 04:37 earnings_nexus_beta.jsonl
+-rw-------    1 tomegathericon  staff       0 Mar 15 04:37 manifest.txt
+Backup completed: 20260315_043708

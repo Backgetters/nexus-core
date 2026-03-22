@@ -1,6 +1,6 @@
 #!/bin/bash
 # NEXUS System Health Monitor
-# Runs every 5 minutes
+# Runs every hour (token optimized)
 
 LOG_FILE="$HOME/clawd/monitoring/logs/system_health.log"
 ALERT_FILE="$HOME/clawd/monitoring/alerts/last_alert.txt"

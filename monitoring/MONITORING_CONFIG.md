@@ -8,7 +8,7 @@
 - Flag client inquiries, urgent messages
 - Alert on: New messages from prospects, payment notifications
 
-### 2. System Health (Every 5 minutes)
+### 2. System Health (Every hour - token optimized)
 - NEXUS agent status
 - API quota levels
 - Disk space, memory

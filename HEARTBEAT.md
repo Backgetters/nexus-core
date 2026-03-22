@@ -52,7 +52,7 @@
 
 ## MONITORING JOBS
 
-### 1. System Health (Every 5 minutes)
+### 1. System Health (Every hour - token optimized)
 - NEXUS agent status (confirm stopped)
 - API quota levels
 - Disk space, memory

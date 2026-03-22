@@ -4,6 +4,214 @@
     "sonoscli": {
       "version": "1.0.0",
       "installedAt": 1770262476127
+    },
+    "trading": {
+      "version": "1.0.1",
+      "installedAt": 1773552264125
+    },
+    "crypto-trading-bot": {
+      "version": "1.0.0",
+      "installedAt": 1773552268980
+    },
+    "linkedin-api": {
+      "version": "1.0.3",
+      "installedAt": 1773552278979
+    },
+    "linkedin-writer": {
+      "version": "1.0.0",
+      "installedAt": 1773552284697
+    },
+    "content-generation": {
+      "version": "1.0.0",
+      "installedAt": 1773552294627
+    },
+    "seo-article-gen": {
+      "version": "1.0.0",
+      "installedAt": 1773552299863
+    },
+    "ai-data-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1773552323208
+    },
+    "automation-workflows": {
+      "version": "0.1.0",
+      "installedAt": 1773552339379
+    },
+    "sales-pipeline-tracker": {
+      "version": "1.0.0",
+      "installedAt": 1773552349771
+    },
+    "marketing-mode": {
+      "version": "1.0.0",
+      "installedAt": 1773552360204
+    },
+    "security-auditor": {
+      "version": "1.0.0",
+      "installedAt": 1773552370415
+    },
+    "devops": {
+      "version": "1.0.0",
+      "installedAt": 1773552380851
+    },
+    "mlx-local-ai": {
+      "version": "1.0.1",
+      "installedAt": 1773552391255
+    },
+    "article-writing": {
+      "version": "1.0.0",
+      "installedAt": 1773630681121
+    },
+    "interview-buddy": {
+      "version": "1.0.2",
+      "installedAt": 1773630682030
+    },
+    "it-risk-assessment-tool": {
+      "version": "1.0.2",
+      "installedAt": 1773630690752
+    },
+    "iso-compliance-gap-analysis": {
+      "version": "1.0.2",
+      "installedAt": 1773630690842
+    },
+    "gdpr-compliance-tracker": {
+      "version": "1.0.2",
+      "installedAt": 1773630700272
+    },
+    "web-vulnerability-assessment": {
+      "version": "1.0.2",
+      "installedAt": 1773630743913
+    },
+    "prompt-token-counter": {
+      "version": "1.0.6",
+      "installedAt": 1773630752513
+    },
+    "privacy-tech-advisor": {
+      "version": "1.0.2",
+      "installedAt": 1773630766941
+    },
+    "privacy-solution-scorecard": {
+      "version": "1.0.2",
+      "installedAt": 1773630830969
+    },
+    "ai-video-gen": {
+      "version": "1.0.0",
+      "installedAt": 1773669299353
+    },
+    "agent-deep-research": {
+      "version": "2.1.3",
+      "installedAt": 1773669304224
+    },
+    "apollo": {
+      "version": "1.0.0",
+      "installedAt": 1773669310421
+    },
+    "ghost-cms": {
+      "version": "0.1.8",
+      "installedAt": 1773669316418
+    },
+    "agentkeys": {
+      "version": "1.2.0",
+      "installedAt": 1773669340485
+    },
+    "ai-avatar-generation": {
+      "version": "0.1.1",
+      "installedAt": 1773669351997
+    },
+    "brevo": {
+      "version": "1.0.0",
+      "installedAt": 1773669359475
+    },
+    "cold-outreach": {
+      "version": "2.0.0",
+      "installedAt": 1773669362946
+    },
+    "kit-email-operator": {
+      "version": "1.0.0",
+      "installedAt": 1773669367169
+    },
+    "agentarxiv": {
+      "version": "1.0.9",
+      "installedAt": 1773669389492
+    },
+    "windsor-ai": {
+      "version": "1.0.3",
+      "installedAt": 1773669395578
+    },
+    "listing-swarm": {
+      "version": "1.0.3",
+      "installedAt": 1773669401556
+    },
+    "justpayai": {
+      "version": "1.0.0",
+      "installedAt": 1773669404958
+    },
+    "clawdwork": {
+      "version": "1.6.1",
+      "installedAt": 1773669407798
+    },
+    "agents-skill-podcastifier": {
+      "version": "0.1.0",
+      "installedAt": 1773669413952
+    },
+    "ai-headshot-generation": {
+      "version": "1.0.0",
+      "installedAt": 1773669417690
+    },
+    "best-image-generation": {
+      "version": "1.0.2",
+      "installedAt": 1773669420883
+    },
+    "salesforce-skill": {
+      "version": "0.1.0",
+      "installedAt": 1773708855266
+    },
+    "base-trader": {
+      "version": "1.1.1",
+      "installedAt": 1773708861950
+    },
+    "email-marketing": {
+      "version": "1.0.0",
+      "installedAt": 1773708951258
+    },
+    "objection-handler": {
+      "version": "1.0.0",
+      "installedAt": 1773708952037
+    },
+    "marketing-drafter": {
+      "version": "1.0.0",
+      "installedAt": 1773708952104
+    },
+    "analyst": {
+      "version": "1.0.0",
+      "installedAt": 1773708984829
+    },
+    "ciso": {
+      "version": "1.0.0",
+      "installedAt": 1773708985584
+    },
+    "security-audit-toolkit": {
+      "version": "1.0.0",
+      "installedAt": 1773709018167
+    },
+    "afrexai-sales-funnel-engine": {
+      "version": "1.0.0",
+      "installedAt": 1773709018567
+    },
+    "cybersec-helper": {
+      "version": "1.0.0",
+      "installedAt": 1773709054550
+    },
+    "afrexai-cybersecurity-engine": {
+      "version": "1.0.0",
+      "installedAt": 1773709055010
+    },
+    "production-readiness": {
+      "version": "1.0.0",
+      "installedAt": 1773709055029
+    },
+    "senior-security": {
+      "version": "2.1.1",
+      "installedAt": 1773709055192
     }
   }
 }
